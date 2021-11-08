@@ -4,7 +4,7 @@
   margin: 0;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #202020;
 }
 button {
@@ -67,6 +67,7 @@ a {
 .title {
   font-size: 54px;
   font-weight: bold;
+  font-family: "MuseoCyrl-900, sans-serif";
   margin-bottom: 15px;
   margin-top: 0;
 }
