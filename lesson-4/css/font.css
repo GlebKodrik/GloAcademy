@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "MuseoCyrl-300, sans-serif";
+  font-family: "MuseoCyrl-300";
   src: url("../fonts/MuseoCyrl-300.woff") format("woff"),
     url("../fonts/MuseoCyrl-300.woff2") format("woff2");
   font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "MuseoCyrl-900, sans-serif";
+  font-family: "MuseoCyrl-900";
   src: url("../fonts/MuseoCyrl-900.woff") format("woff"),
     url("../fonts/MuseoCyrl-900.woff2") format("woff2");
   font-weight: normal;
