@@ -1,0 +1,28 @@
+.text-box {
+  padding-top: 2rem;
+}
+.result {
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
+.fonts {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+small {
+  font-size: 1.3rem;
+}
+
+.fonts-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+.fonts-bad-script {
+  font-family: "Bad Script", cursive, sans-serif;
+}
+.fonts-lobster {
+  font-family: "Lobster", cursive, sans-serif;
+}
+.fonts-bebas {
+  font-family: "Bebas", sans-serif;
+}
