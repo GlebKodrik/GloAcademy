@@ -36,13 +36,13 @@ a {
   font-weight: bold;
 }
 .nav-link {
-  color: #202020;
+  color: inherit;
   margin-right: 11px;
   margin-left: 11px;
 }
 
 .login {
-  color: #202020;
+  color: inherit;
 }
 
 /* Главная секция */
@@ -67,7 +67,7 @@ a {
 .title {
   font-size: 54px;
   font-weight: bold;
-  font-family: "MuseoCyrl-900, sans-serif";
+  font-family: "MuseoCyrl", sans-serif;
   margin-bottom: 15px;
   margin-top: 0;
 }
@@ -127,4 +127,81 @@ a {
   background-color: #fff;
   color: #f89c02;
   border: 2px solid #f89c02;
+}
+/* About */
+.about {
+  background-color: #f1f1f1;
+  margin-bottom: 87px;
+}
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 94px 0;
+}
+
+.about-book {
+  max-width: 454px;
+}
+.author-author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 552px;
+  padding: 68px 53px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 120px 0 rgba(161, 161, 161, 0.08);
+  border: solid 1px #f3f3f3;
+  background-color: #fff;
+}
+.author-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 21px;
+  margin-bottom: 27px;
+}
+
+.author-text {
+  flex-basis: 100%;
+}
+.author-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+.author-link {
+  font-size: 16px;
+  color: inherit;
+}
+
+.author-text {
+  line-height: 1.5;
+  font-size: 16px;
+}
+.about-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+.about-info {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 21px;
+}
+/* Readership */
+.readership-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 57px;
+}
+.readership-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.readership-person {
+  margin-bottom: 30px;
 }
