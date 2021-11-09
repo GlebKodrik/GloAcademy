@@ -203,5 +203,8 @@ a {
 }
 
 .readership-person {
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
   margin-bottom: 30px;
 }
