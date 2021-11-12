@@ -10,7 +10,9 @@ body {
 button {
   border: none;
 }
-
+li {
+  list-style-type: none;
+}
 a {
   text-decoration: none;
 }
@@ -21,6 +23,11 @@ a {
 }
 /* Верхняя часть */
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
   background-color: #f1f1f1;
   padding: 20px 0;
   font-size: 14px;
@@ -47,6 +54,8 @@ a {
 
 /* Главная секция */
 .hero {
+  margin-top: 60px;
+  padding-top: 60px;
   padding: 60px 0 70px 0;
 }
 
@@ -55,8 +64,19 @@ a {
   align-items: center;
 }
 
-.hero-img {
+.image-block {
+  position: relative;
   margin-right: 122px;
+}
+.sale-label {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #c93535;
+  padding: 12px 17px;
 }
 
 .author {
@@ -191,6 +211,9 @@ a {
   margin-bottom: 21px;
 }
 /* Readership */
+.readership {
+  margin-bottom: 91px;
+}
 .readership-title {
   font-size: 32px;
   font-weight: bold;
@@ -207,4 +230,48 @@ a {
   height: 165px;
   object-fit: cover;
   margin-bottom: 30px;
+}
+/* Footer */
+.footer {
+  background-color: #f1f1f1;
+  padding-top: 60px;
+  padding-bottom: 93px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: inherit;
+}
+.footer-list {
+  font-size: 16px;
+  color: inherit;
+}
+.footer-item {
+  margin-bottom: 16px;
+}
+.footer-link {
+  color: inherit;
+}
+.footer-requisites {
+  margin-right: 167px;
+}
+.footer-information {
+  margin-right: 158px;
+}
+
+.to-top {
+  position: fixed;
+  box-shadow: 0px 1px 120px 0 rgba(161, 161, 161, 0.08);
+  border: solid 1px #eee;
+  padding: 18px 19px;
+  background-color: #fff;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  border-radius: 4px;
 }
