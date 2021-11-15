@@ -444,3 +444,30 @@ img {
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+  .image-block {
+    max-width: 263px;
+    min-width: 263px;
+    margin-right: 0;
+    margin: auto;
+    margin-bottom: 43px;
+  }
+  .favorites-text {
+    display: none;
+  }
+  .pricetag {
+    margin-right: 38px;
+  }
+  .about-container {
+    padding: 61px 0;
+  }
+  .author-author {
+    padding: 23px 33px;
+  }
+  .readership {
+    margin-bottom: 69px;
+  }
+}
