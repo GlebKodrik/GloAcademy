@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  color: $text-color;
+  font-family: "Mulish", sans-serif;
+}
+input {
+  border: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+.container {
+  max-width: 1110px;
+  margin: auto;
+}
