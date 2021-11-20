@@ -1,17 +1,44 @@
 .header {
   background-color: #fff;
-  padding: 40px 0;
   &-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 40px 0;
+    &__menu-button {
+      display: none;
+    }
   }
+
   &__search {
     margin-right: auto;
     margin-left: 108px;
   }
+  &-menu {
+    background: $dark;
+  }
 }
-
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+  color: $light;
+  &__item {
+    padding: 31px 0;
+  }
+  &__link {
+    color: inherit;
+    text-transform: uppercase;
+    &:hover {
+      border-bottom: 1px solid $primary;
+    }
+  }
+}
+.logo {
+  width: 177px;
+}
 .search {
   display: flex;
   position: relative;
@@ -38,6 +65,7 @@
     height: 100%;
     width: 65px;
     background-color: $primary;
+    cursor: pointer;
   }
 }
 
