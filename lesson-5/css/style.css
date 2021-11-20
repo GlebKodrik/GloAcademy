@@ -429,6 +429,7 @@ template {
 }
 
 .navbar-list__link {
+  cursor: pointer;
   color: inherit;
   text-transform: uppercase;
 }
