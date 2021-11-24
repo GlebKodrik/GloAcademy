@@ -6,5 +6,9 @@
 @import "normalize";
 // подключение блоков
 @import "blocks/header";
-//адаптив
+// хлебные крошки
+@import "blocks/breadcrumb";
+// стили блока отель
+@import "blocks/hotel";
+// адаптив
 @import "media";

@@ -7,6 +7,7 @@ a {
 body {
   color: $text-color;
   font-family: "Mulish", sans-serif;
+  background: $secondary;
 }
 input {
   border: none;
@@ -17,6 +18,12 @@ button {
 }
 img {
   max-width: 100%;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 ul {
   list-style-type: none;
