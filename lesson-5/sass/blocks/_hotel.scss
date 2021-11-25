@@ -80,7 +80,7 @@
 }
 .swiper {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
   &::after {
@@ -102,6 +102,7 @@
 }
 .slider {
   width: 728px;
+  height: 450px;
   &-button {
     cursor: pointer;
     position: absolute;
@@ -207,4 +208,5 @@
   height: 213px;
   border-radius: 10px;
   background-color: black;
+  overflow: hidden;
 }
