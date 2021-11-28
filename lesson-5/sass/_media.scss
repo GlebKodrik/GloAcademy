@@ -17,7 +17,8 @@
   }
 }
 @media (max-width: 992px) {
-  .container {
+  .container,
+  .newsletter-wrapper {
     max-width: 700px;
   }
   .logo {
@@ -137,6 +138,17 @@
   .map {
     width: 100%;
   }
+  .newsletter {
+    &-wrapper {
+      flex-direction: column;
+      max-width: 576px;
+      width: 92%;
+      align-items: flex-start;
+    }
+    &-title {
+      margin-bottom: 37px;
+    }
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -152,5 +164,17 @@
     &__slider {
       margin-bottom: 20px;
     }
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+    &-title {
+      font-size: 20px;
+      &__strong {
+        font-size: 30px;
+      }
+    }
+  }
+  .subscribe {
+    width: 100%;
   }
 }
