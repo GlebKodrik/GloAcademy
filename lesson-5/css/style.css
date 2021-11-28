@@ -551,7 +551,7 @@ template {
   overflow: hidden;
 }
 
-.hotel-slider::after {
+.hotel-slider__item::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -837,6 +837,7 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
   font-family: Mulish, sans-serif;
 }
@@ -932,7 +933,7 @@ template {
 
 .reviews-slider__item {
   position: relative;
-  width: 730px;
+  max-width: 730px;
   margin: auto;
   margin-top: 45px;
   display: -webkit-box;
@@ -1059,10 +1060,10 @@ template {
     max-width: 960px;
     max-width: 92%;
   }
-  .slider {
+  .hotel-slider {
     width: 560px;
   }
-  .swiper-slide__img {
+  .hotel-slider__img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -1110,11 +1111,14 @@ template {
   .hotel__booking {
     width: 340px;
   }
-  .slider {
+  .hotel-slider {
     width: 100%;
   }
   .map {
     width: 340px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1184,7 +1188,7 @@ template {
             order: -1;
     margin-left: 0;
   }
-  .slider {
+  .hotel-slider {
     height: 350px;
   }
   .hotel-right {
@@ -1214,6 +1218,33 @@ template {
   .newsletter-title {
     margin-bottom: 37px;
   }
+  .reviews-slider__profile {
+    padding: 0;
+  }
+  .reviews-slider__text {
+    margin-bottom: 0;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 45px;
+  }
+  .reviews-slider__button-prev {
+    left: 50%;
+    margin-left: -65px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button-next {
+    right: 50%;
+    margin-right: -65px;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
 }
 
 @media (max-width: 576px) {
@@ -1223,8 +1254,14 @@ template {
   .logo {
     width: 99px;
   }
-  .slider {
+  .hotel-slider {
     height: 250px;
+  }
+  .reviews-slider__item {
+    padding: 0 32px 36px;
+  }
+  .reviews-slider__profile {
+    padding: 0;
   }
   .hotel__slider {
     margin-bottom: 20px;

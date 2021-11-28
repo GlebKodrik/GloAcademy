@@ -13,7 +13,7 @@
   &-slider {
     &__item {
       position: relative;
-      width: 730px;
+      max-width: 730px;
       margin: auto;
       margin-top: 45px;
       display: flex;
