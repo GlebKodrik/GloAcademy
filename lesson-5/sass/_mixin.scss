@@ -1,0 +1,13 @@
+@mixin arrows-center($arrow-width, $arrow-height, $background-size: none) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: $arrow-width;
+  height: $arrow-height;
+  background-repeat: no-repeat;
+  background-size: $background-size;
+  background-position: center;
+  z-index: 99;
+  cursor: pointer;
+  background-color: transparent;
+}

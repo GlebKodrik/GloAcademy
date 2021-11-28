@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/mixin/arrowSlider.scss"
+    ],
+    "names": [],
+    "file": "arrowSlider.css"
+}

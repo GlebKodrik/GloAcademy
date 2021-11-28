@@ -1,5 +1,7 @@
 // подключение переменных
 @import "variables";
+// mixin
+@import "mixin";
 // подключение базовых настроек
 @import "settings";
 // подключение normilize
@@ -12,5 +14,7 @@
 @import "blocks/hotel";
 // newsletter блок
 @import "blocks/newsletter";
+// reviews
+@import "blocks/reviews";
 // адаптив
 @import "media";

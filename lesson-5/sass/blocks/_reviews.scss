@@ -1,0 +1,101 @@
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  font-family: "Mulish", sans-serif;
+  &-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+  &-slider {
+    &__item {
+      position: relative;
+      width: 730px;
+      margin: auto;
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      align-items: center;
+      background-color: $light;
+      &::before {
+        content: "";
+        top: 13px;
+        left: 62px;
+        position: absolute;
+        width: 70px;
+        height: 47px;
+        background-image: url(../../img/quote-left.svg);
+        background-repeat: no-repeat;
+      }
+      &::after {
+        content: "";
+        top: 118px;
+        right: 62px;
+        position: absolute;
+        width: 70px;
+        height: 47px;
+        background-image: url(../../img/quote-right.svg);
+        background-repeat: no-repeat;
+      }
+    }
+    &__profile {
+      padding: 0 62px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -45px;
+    }
+    &__img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 9px;
+    }
+    &__username {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: $primary;
+      margin-bottom: 10px;
+    }
+    &__date {
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 13px;
+      margin-bottom: 5px;
+    }
+    &__rating {
+      margin-bottom: 33px;
+    }
+    &__text {
+      margin: auto;
+      max-width: 537px;
+      font-size: 12px;
+      text-align: justify;
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: $text-color;
+    }
+    &__button {
+      @include arrows-center(30px, 30px, 10px);
+      &-prev {
+        background-color: #828282;
+        -webkit-mask: url(../../img/arrow-prev.svg) no-repeat 50% 50%;
+        mask: url(../../img/arrow-prev.svg) no-repeat 50% 50%;
+        left: 0;
+      }
+      &-next {
+        background-color: #828282;
+        -webkit-mask: url(../../img/arrow.svg) no-repeat 50% 50%;
+        mask: url(../../img/arrow-prev.svg) no-repeat 50% 50%;
+        right: 0;
+      }
+    }
+  }
+}
