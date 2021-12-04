@@ -349,6 +349,11 @@
       }
     }
   }
+  .navbar-list {
+    &__search {
+      width: 100%;
+    }
+  }
   .subscribe {
     width: 100%;
   }
