@@ -33,3 +33,8 @@ const reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
+
+let menuBottom = document.querySelector(`.menu-button`);
+menuBottom.addEventListener("click", () => {
+  document.querySelector(`.header-menu`).classList.toggle("header-menu_active");
+});

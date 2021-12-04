@@ -27,6 +27,11 @@
   color: $light;
   &__item {
     padding: 31px 0;
+    &_mobile {
+      &-visible {
+        display: none;
+      }
+    }
   }
   &__link {
     cursor: pointer;

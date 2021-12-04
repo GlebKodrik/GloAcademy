@@ -26,7 +26,7 @@
     <title>Best tour plan - Hotel</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header header_mobile-fixed">
       <div class="container">
         <div class="header-top">
           <a href="#" class="logo">
@@ -37,14 +37,17 @@
             />
           </a>
 
-          <form action="#" class="search header__search">
+          <form
+            action="#"
+            class="search header__search header__search_mobile-hidden"
+          >
             <input type="text" class="search__input" />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: seacrh" />
             </button>
           </form>
 
-          <div class="header__user user">
+          <div class="header__user user header__user_mobile-hidden">
             <img
               src="img/avatar.png"
               alt="Avatar: Nathan"
@@ -62,6 +65,39 @@
       <nav class="header-menu">
         <div class="container">
           <ul class="navbar-list">
+            <li
+              class="
+                navbar-list__item
+                navbar-list__item_mobile-visible
+                navbar-list__user_mobile-bottom
+              "
+            >
+              <div class="header__user user header__user_mobile-visible">
+                <img
+                  src="img/avatar.png"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <a href="#" class="user__name user__name_mobile">Nathan</a>
+              </div>
+            </li>
+            <li
+              class="
+                navbar-list__item
+                navbar-list__item_mobile-visible
+                navbar-list__search_mobile-bottom
+              "
+            >
+              <form
+                action="#"
+                class="search header__search header__search_mobile-visible"
+              >
+                <input type="text" class="search__input" />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: seacrh" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-list__item">
               <a href="#" class="navbar-list__link">All Deals</a>
             </li>
@@ -444,19 +480,28 @@
           </div>
           <div class="footer__contacts-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form
+              action="https://formspree.io/f/mvolpjyz"
+              method="POST"
+              class="footer__form"
+            >
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
+                required
               /><input
+                required
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
