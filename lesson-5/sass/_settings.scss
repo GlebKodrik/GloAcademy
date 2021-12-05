@@ -34,3 +34,21 @@ ul {
   max-width: 1110px;
   margin: auto;
 }
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0 23px;
+  height: 50px;
+}
+.message {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  resize: none;
+}
+.info {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #e0e0e0;
+}

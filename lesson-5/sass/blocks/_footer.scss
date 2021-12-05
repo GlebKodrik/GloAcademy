@@ -85,20 +85,12 @@
     color: inherit;
   }
   &__input {
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 0 23px;
-    height: 50px;
     margin-bottom: 15px;
     flex-basis: 48%;
   }
   &__message {
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 18px 23px;
     flex-basis: 100%;
     margin-bottom: 23px;
-    resize: none;
     min-height: 123px;
   }
   &__button {
@@ -111,11 +103,6 @@
     color: inherit;
     background-color: $primary;
     border-radius: 4px;
-  }
-  &__info {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    color: #e0e0e0;
+    cursor: pointer;
   }
 }
