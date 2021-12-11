@@ -22,13 +22,14 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best tour plan - Hotel</title>
   </head>
   <body>
     <header class="header header_mobile-fixed">
       <div class="container">
-        <div class="header-top">
+        <div data-aos="fade-up" class="header-top">
           <a href="#" class="logo">
             <img
               src="img/harizontal-logo.png"
@@ -321,7 +322,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities__wrap">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activities/activ-1.jpg"
               alt="activities"
@@ -330,7 +335,11 @@
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activities/activ-2.jpg"
               alt="activities"
@@ -339,7 +348,11 @@
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activities/activ-3.jpg"
               alt="activities"
@@ -348,7 +361,11 @@
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activities/activ-4.jpg"
               alt="activities"
@@ -582,6 +599,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
