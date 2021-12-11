@@ -69,4 +69,31 @@ $(document).ready(function () {
       closeOverlay();
     }
   });
+  $(".form").each(function () {
+    $(this).validate({
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlenght: "Name must be at least 2 letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Required phone",
+        },
+      },
+    });
+  });
+  $(".newsletter__subscribe").validate({
+    errorLabelContainer: ".error-block",
+    messages: {
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+  $("[name='phone']").mask("+7 (000) 000-00-00");
 });

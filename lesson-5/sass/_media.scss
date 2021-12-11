@@ -21,7 +21,9 @@
   }
   .footer {
     &__input {
-      flex-basis: 100%;
+      &-group {
+        flex-basis: 100%;
+      }
     }
   }
 }
@@ -90,7 +92,9 @@
       grid-row-gap: 40px;
     }
     &__input {
-      flex-basis: 49%;
+      &-group {
+        flex-basis: 49%;
+      }
     }
     &__logo {
       grid-row: 1 / 2;
@@ -323,7 +327,9 @@
     padding-top: 69px;
     padding-bottom: 30px;
     &__input {
-      flex-basis: 100%;
+      &-group {
+        flex-basis: 100%;
+      }
     }
   }
   .modal {
@@ -422,8 +428,10 @@
       order: 4;
     }
     &__info {
-      flex-basis: 100%;
-      margin-bottom: 15px;
+      &-group {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+      }
     }
   }
   .modal {

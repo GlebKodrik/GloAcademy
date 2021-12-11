@@ -257,16 +257,19 @@
         <form
           action="https://formspree.io/f/mvolpjyz"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="newsletter__subscribe"
         >
-          <input
-            type="text"
-            class="subscribe__input"
-            placeholder="Your email address"
-            name="email"
-            required
-          />
-          <button class="subscribe__button">Send</button>
+          <div class="subscribe">
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Your email address"
+              name="email"
+              required
+            />
+            <button type="submit" class="subscribe__button">Send</button>
+          </div>
+          <div class="error-block"></div>
         </form>
       </div>
     </section>
@@ -492,21 +495,27 @@
             <form
               action="https://formspree.io/f/mvolpjyz"
               method="POST"
-              class="footer__form"
+              class="footer__form form"
             >
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-                required
-              /><input
-                required
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  required
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  type="tel"
+                />
+              </div>
+
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -529,7 +538,7 @@
         <form
           action="https://formspree.io/f/mvolpjyz"
           method="POST"
-          class="modal__form"
+          class="form_valid modal__form form"
         >
           <input
             type="text"
@@ -539,14 +548,14 @@
             required
           /><input
             required
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
           />
           <input
             required
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
@@ -571,6 +580,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
