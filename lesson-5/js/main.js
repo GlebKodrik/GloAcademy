@@ -71,10 +71,21 @@ $(document).ready(function () {
   });
   $(".form").each(function () {
     $(this).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+          maxlength: 20,
+        },
+        phone: {
+          minlength: 18,
+        },
+      },
       messages: {
         name: {
           required: "Please specify your name",
-          minlenght: "Name must be at least 2 letters",
+          minlength: "Name must be at least 2 letters",
+          maxlength: "Name is more than 20 characters",
         },
         email: {
           required: "We need your email address to contact you",
@@ -82,6 +93,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Required phone",
+          minlength: "Number is not written correctly",
         },
       },
     });
