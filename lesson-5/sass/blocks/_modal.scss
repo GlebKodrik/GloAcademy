@@ -41,6 +41,7 @@
     visibility: hidden;
     opacity: 0;
     overflow-y: auto;
+    height: 53%;
     transition: opacity 0.2s;
     &_visible {
       visibility: visible;
