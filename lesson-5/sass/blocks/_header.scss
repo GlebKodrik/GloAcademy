@@ -72,6 +72,9 @@
     width: 65px;
     background-color: $primary;
     cursor: pointer;
+    &:hover {
+      background-color: $dark;
+    }
   }
 }
 

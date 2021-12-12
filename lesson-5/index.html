@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,10 +29,13 @@
     <title>Best tour plan - Hotel</title>
   </head>
   <body>
-    <header class="header header_mobile-fixed">
+    <header class="header header_mobile-fixed" id="alldeals">
       <div class="container">
         <div data-aos="fade-up" class="header-top">
-          <a href="#" class="logo">
+          <a
+            href="https://glebkodrik.github.io/GloAcademy/lesson-5/"
+            class="logo"
+          >
             <img
               src="img/harizontal-logo.webp"
               class="logo__image"
@@ -59,7 +64,9 @@
               alt="Avatar: Nathan"
               class="user__avatar"
             />
-            <a href="#" class="user__name">Nathan</a>
+            <a href="https://vk.com/k.glebka" target="_blank" class="user__name"
+              >Nathan</a
+            >
           </div>
           <button class="menu-button header-top__menu-button">
             <span class="menu-button__line"></span>
@@ -111,25 +118,60 @@
               </form>
             </li>
             <li class="navbar-list__item">
-              <a href="#" class="navbar-list__link">All Deals</a>
+              <a
+                href="#alldeals"
+                class="navbar-list__link js-scroll-trigger"
+                data-scroll="#alldeals"
+                >All Deals</a
+              >
             </li>
             <li class="navbar-list__item">
-              <a href="#" class="navbar-list__link">Hotels</a>
+              <a
+                href="#hotels"
+                class="navbar-list__link js-scroll-trigger"
+                data-scroll="#hotels"
+                >Hotels</a
+              >
             </li>
             <li class="navbar-list__item">
-              <a href="#" class="navbar-list__link">Activities</a>
+              <a
+                href="#activities"
+                class="navbar-list__link js-scroll-trigger"
+                data-scroll="#activities"
+                >Activities</a
+              >
             </li>
             <li class="navbar-list__item">
-              <a href="#" class="navbar-list__link">Hotel Day Packages</a>
+              <a
+                href="#more"
+                class="navbar-list__link js-scroll-trigger"
+                data-scroll="#more"
+                >Hotel Day Packages</a
+              >
             </li>
             <li class="navbar-list__item">
-              <a href="#" class="navbar-list__link">Restaurants</a>
+              <a
+                href="#more"
+                class="navbar-list__link js-scroll-trigger"
+                data-scroll="#more"
+                >Restaurants</a
+              >
             </li>
             <li class="navbar-list__item">
-              <a href="#" class="navbar-list__link">Events</a>
+              <a
+                href="#more"
+                class="navbar-list__link js-scroll-trigger"
+                data-scroll="#more"
+                >Events</a
+              >
             </li>
             <li class="navbar-list__item">
-              <a href="#" class="navbar-list__link">Rodrigues</a>
+              <a
+                href="#more"
+                class="navbar-list__link js-scroll-trigger"
+                data-scroll="#more"
+                >Rodrigues</a
+              >
             </li>
           </ul>
         </div>
@@ -148,7 +190,7 @@
         </ul>
       </div>
     </nav>
-    <section class="hotel">
+    <section class="hotel" id="hotels">
       <div class="container">
         <div class="hotel-info">
           <div class="hotel-info__text">
@@ -288,7 +330,7 @@
             />
             <button type="submit" class="subscribe__button">Send</button>
           </div>
-          <div class="error-block"></div>
+          <div class="error-block subscribe__error"></div>
         </form>
       </div>
     </section>
@@ -350,7 +392,7 @@
         </div>
       </div>
     </section>
-    <section class="activities">
+    <section class="activities" id="activities">
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities__wrap">
@@ -358,6 +400,7 @@
             class="card activities__card"
             data-aos="fade-up"
             data-aos-delay="100"
+            data-toggle="modal"
           >
             <img
               src="img/activities/activ-1.webp"
@@ -371,6 +414,7 @@
             class="card activities__card"
             data-aos="fade-up"
             data-aos-delay="300"
+            data-toggle="modal"
           >
             <img
               src="img/activities/activ-2.webp"
@@ -384,6 +428,7 @@
             class="card activities__card"
             data-aos="fade-up"
             data-aos-delay="500"
+            data-toggle="modal"
           >
             <img
               src="img/activities/activ-3.webp"
@@ -397,6 +442,7 @@
             class="card activities__card"
             data-aos="fade-up"
             data-aos-delay="700"
+            data-toggle="modal"
           >
             <img
               src="img/activities/activ-4.webp"
@@ -409,36 +455,81 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="more">
       <div class="container">
         <div class="footer-wrap">
-          <img src="img/logo-vert.webp" alt="Logo" class="logo footer__logo" />
+          <a
+            href="https://glebkodrik.github.io/GloAcademy/lesson-5/"
+            class="footer__logo"
+          >
+            <img src="img/logo-vert.webp" alt="Logo" class="logo" />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">All Deals</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >All Deals</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Hotels</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Hotels</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Activities</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Activities</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Spa Packages</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Spa Packages</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Hotel Day Packages</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Hotel Day Packages</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Restaurants</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Restaurants</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Fitness</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Fitness</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Rodrigues</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Rodrigues</a
+                >
               </li>
             </ul>
           </div>
@@ -446,22 +537,51 @@
             <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">About Us </a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >About Us
+                </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link"> Contact Us </a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                >
+                  Contact Us
+                </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">How does it work?</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >How does it work?</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Frequently Asked Questions</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Frequently Asked Questions</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Deals.mu loyalty program</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Deals.mu loyalty program</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link"
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
                   >Promote your Business on BTP</a
                 >
               </li>
@@ -470,20 +590,32 @@
           <div class="footer__social-networck">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a
+                href="https://ru-ru.facebook.com/"
+                target="_blank"
+                class="footer__link"
                 ><img
                   src="img/social/fc.svg"
                   alt="facebook"
                   width="24"
-                  height="24" /></a
-              ><a href="#" class="footer__link"
+                  height="24"
+                  class="footer__icon_hover" /></a
+              ><a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__link"
                 ><img
+                  class="footer__icon_hover"
                   src="img/social/yt.svg"
                   alt="youtube"
                   width="21"
                   height="21" /></a
-              ><a href="#" class="footer__link"
+              ><a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__link"
                 ><img
+                  class="footer__icon_hover"
                   src="img/social/inst.svg"
                   alt="inst"
                   width="20"
@@ -495,16 +627,36 @@
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">Terms & Conditions </a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Terms & Conditions
+                </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Disclaimer</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Disclaimer</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Cancellation policy</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Cancellation policy</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Privacy</a>
+                <a
+                  href="https://glo.academy/"
+                  target="_blank"
+                  class="footer__link"
+                  >Privacy</a
+                >
               </li>
             </ul>
           </div>
@@ -514,19 +666,25 @@
               Feel free to contact us by phone, email or by our contact form
             </p>
             <ul class="footer__ul">
-              <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper">
-                  <img
-                    src="img/contact/nav.svg"
-                    class="footer__icon"
-                    width="24"
-                    height="24"
-                    alt="Icon: nav"
-                  />
-                </div>
+              <li class="footer__item--mb-2">
+                <a
+                  class="footer__item footer__link_hover"
+                  target="_blank"
+                  href="https://www.google.com/maps?q=9748+Blossom+Hill+Rd+undefined+Lansing,+Idaho+68545+United+States&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj-gqOqot70AhXxkIsKHWOqCUUQ_AUoAXoECAEQAw"
+                >
+                  <div class="footer__icon-wrapper">
+                    <img
+                      src="img/contact/nav.svg"
+                      class="footer__icon"
+                      width="24"
+                      height="24"
+                      alt="Icon: nav"
+                    />
+                  </div>
 
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                States
+                  9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                  States
+                </a>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -538,22 +696,41 @@
                     alt="Icon: call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday -Saturday:> 52-56-61-38 (08:00 am – 20:00
-                pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
-              </li>
-              <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper">
-                  <img
-                    width="20"
-                    height="20"
-                    src="img/contact/mail.svg"
-                    class="footer__icon"
-                    alt="Icon: maill"
-                  />
+                <div class="footer-phone">
+                  <a
+                    href="Tel: 269 1500"
+                    class="footer-phone__link footer__link_hover"
+                    >Tel (business hours) : 269 1500</a
+                  >
+                  <a
+                    href="Tel: 52-56-61-38"
+                    class="footer-phone__link footer__link_hover"
+                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                    20:00 pm)</a
+                  >
+                  <a
+                    href="Tel: 52-56-61-38"
+                    class="footer-phone__link footer__link_hover"
+                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                  >
                 </div>
-                cherly.lawson@example.com
+              </li>
+              <li class="footer__item--mb-2">
+                <a
+                  class="footer__item footer__link_hover"
+                  href="mailto:cherly.lawson@example.com"
+                >
+                  <div class="footer__icon-wrapper">
+                    <img
+                      width="20"
+                      height="20"
+                      src="img/contact/mail.svg"
+                      class="footer__icon"
+                      alt="Icon: maill"
+                    />
+                  </div>
+                  cherly.lawson@example.com
+                </a>
               </li>
             </ul>
           </div>

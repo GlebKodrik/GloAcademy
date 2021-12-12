@@ -54,6 +54,12 @@ ul {
 }
 .button {
   cursor: pointer;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid $primary;
+    background-color: $dark;
+    color: $primary;
+  }
 }
 .error {
   color: $primary;

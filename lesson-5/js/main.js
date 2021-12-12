@@ -17,7 +17,18 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
   });
+  $(".js-scroll-trigger").click(function () {
+    var scrollName = $(this).attr("data-scroll"),
+      scrollElem = $(scrollName),
+      scrollTop = scrollElem.offset().top;
 
+    $("html, body").animate(
+      {
+        scrollTop: scrollTop,
+      },
+      500
+    );
+  });
   const reviewsSlider = new Swiper(".reviews-slider", {
     loop: true,
 

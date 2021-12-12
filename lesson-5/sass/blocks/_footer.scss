@@ -10,6 +10,20 @@
     grid-gap: 20px;
     grid-auto-rows: minmax(40px, min-content);
   }
+  &-phone {
+    &__link {
+      display: block;
+      color: $footer-text-color;
+      line-height: 160%;
+    }
+  }
+  &__link {
+    &_hover {
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
   &__logo {
     width: 166px;
     margin-top: 31px;
@@ -43,6 +57,14 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  &__icon {
+    &_hover {
+      &:hover {
+        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+          brightness(104%) contrast(97%);
+      }
+    }
   }
   &_ul {
     padding: 0;
